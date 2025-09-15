@@ -6,7 +6,7 @@ import plotly.express as px
 # =====================
 # Load Data
 # =====================
-df = pd.read_excel("Health_Management_Project.xlsx", sheet_name="Cleaned Data")
+df = pd.read_excel("Health_Management_Dataset.xlsx", sheet_name="Cleaned Data")
 
 # Normalize column names
 df.columns = df.columns.str.strip()
@@ -148,3 +148,4 @@ st.sidebar.markdown("""
 - Streamlit provides interactive filtering by doctor, city, gender, diagnosis, and insurance.
 - Charts include download button in toolbar (click camera icon) for PNG export.
 """)
+
